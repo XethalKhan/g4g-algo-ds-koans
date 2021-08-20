@@ -1,4 +1,11 @@
-import Node from './../../../lib/classes/node.js';
+class Node{
+
+  constructor(value){
+    this.value = value;
+    this.next = null;
+  }
+
+}
 
 
 /**
@@ -20,20 +27,7 @@ Auxilary space: O(1)
 */
 function append(value){
 
-  let node = new Node(value);
-
-  if(this.head === null){
-    this.head = node;
-    return;
-  }
-
-  let end = this.head;
-
-  while(end.next !== null){
-    end = end.next;
-  }
-
-  end.next = node;
+  return;
 
 }
 

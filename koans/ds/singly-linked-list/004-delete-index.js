@@ -1,5 +1,3 @@
-import Node from './../../../lib/classes/node.js';
-
 /**
 Given a singly linked list and a position, delete a linked list node at the given position.
 
@@ -21,33 +19,7 @@ Auxilary space: O(1)
 */
 function deleteIndex(index){
 
-  if(this.head  === null){
-    return null;
-  }
-
-  if(index === 0){
-    let start = this.head;
-    this.head = this.head.next;
-    start.next = null;
-    return start;
-  }
-
-  let temp = this.head;
-
-  for(let i = 0; i < index - 1 && temp !== null; i++){
-    temp = temp.next;
-  }
-
-  if (temp === null || temp.next === null){
-    return null;
-  }
-
-  let deleted = temp.next;
-
-  temp.next = deleted.next;
-  deleted.next = null;
-
-  return deleted;
+  return null;
 
 }
 

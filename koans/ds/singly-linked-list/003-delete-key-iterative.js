@@ -1,6 +1,3 @@
-import Node from './../../../lib/classes/node.js';
-
-
 /**
 Given a ‘key’, delete the first occurrence of this key in the linked list.
 
@@ -14,33 +11,6 @@ Time complexity:O(n) where n is the number of nodes in linked list.
 Auxilary space: O(0)
 */
 function deleteKey(key){
-
-  if(this.head === null){
-    return null;
-  }
-
-  if(this.head.value === key){
-    let oldHead = this.head;
-    this.head = this.head.next;
-    oldHead.next = null;
-    return oldHead;
-  }
-
-  let prev = this.head;
-  let current = this.head.next;
-
-  while(current.next !== null){
-
-    if(current.value === key){
-      prev.next = current.next;
-      current.next = null;
-      return current;
-    }
-
-    prev = prev.next;
-    current = current.next;
-
-  }
 
   return null;
 

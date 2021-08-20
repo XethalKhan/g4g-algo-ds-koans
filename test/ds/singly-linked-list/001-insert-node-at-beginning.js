@@ -1,6 +1,6 @@
 import assert from 'assert/strict';
 
-import SinglyLinkedList from './../../../lib/classes/singly-linked-list.js';
+import SinglyLinkedList from './../../../koans/ds/singly-linked-list/index.js';
 
 
 
