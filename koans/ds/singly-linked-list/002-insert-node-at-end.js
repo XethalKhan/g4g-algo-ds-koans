@@ -1,4 +1,11 @@
-import Node from './../../../lib/classes/node.js';
+class Node{
+
+  constructor(value){
+    this.value = value;
+    this.next = null;
+  }
+
+}
 
 
 /**
