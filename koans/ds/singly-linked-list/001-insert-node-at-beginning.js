@@ -1,4 +1,11 @@
-import Node from './../../../lib/classes/node.js';
+class Node{
+
+  constructor(value){
+    this.value = value;
+    this.next = null;
+  }
+
+}
 
 /**
 The new node is always added before the head of the given Linked List.
@@ -17,15 +24,7 @@ Auxilary space: O(0)
 */
 function push(value){
 
-  let node = new Node(value);
-
-  if(this.head === null){
-    this.head = node;
-    return;
-  }
-
-  node.next = this.head;
-  this.head = node;
+  return;
 
 }
 
