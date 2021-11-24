@@ -1,8 +1,8 @@
-import test from './test/index.js';
+import app from './app/index.js';
 
   try{
 
-    test.full();
+    app();
 
   }catch(e){
 

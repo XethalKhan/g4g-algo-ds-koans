@@ -1,14 +1,14 @@
-import algorithm from './algorithms/index.js';
-import dataStructure from './ds/index.js';
+import algorithms from './algorithms/index.js';
+import ds from './ds/index.js';
 
 export function full(){
-  algorithm.full();
-  dataStructure.full();
+  algorithms.full();
+  ds.full();
 }
 
 const test = {
-  algorithm,
-  dataStructure,
+  algorithms,
+  ds,
   full
 }
 
