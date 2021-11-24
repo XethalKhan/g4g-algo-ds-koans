@@ -3,7 +3,7 @@ import linkedListImplementation from './002-linked-list-implementation.js';
 
 import sortQueueIntoAnotherQueueUsingStack from './020-sort-queue-into-another-queue-using-stack.js';
 
-import ArrayImplementation from './array-implementation.js';
+import ArrayImpl from './array-implementation.js';
 import LinkedListImpl from './linked-list-implementation.js';
 
 export const functions = {
@@ -12,8 +12,8 @@ export const functions = {
   sortQueueIntoAnotherQueueUsingStack
 };
 
-export const QueueArrayImpl = ArrayImplementation;
+export const QueueArrayImpl = ArrayImpl;
 export const QueueLinkedListImpl = LinkedListImpl;
 export const Queue = LinkedListImpl;
 
-export default QueueLinkedListImpl;
+export default Queue;
