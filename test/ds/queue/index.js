@@ -3,11 +3,23 @@ import linkedListImplementationTest from './002-linked-list-implementation.js';
 
 import sortQueueIntoAnotherQueueUsingStackTest from './020-sort-queue-into-another-queue-using-stack.js';
 
-function test(){
+export const arrayImplementation = arrayImplementationTest;
+export const linkedListImplementation = linkedListImplementationTest;
+
+export const sortQueueIntoAnotherQueueUsingStack = sortQueueIntoAnotherQueueUsingStackTest;
+
+export function full(){
   arrayImplementationTest();
   linkedListImplementationTest();
 
   sortQueueIntoAnotherQueueUsingStackTest();
 }
 
-export default test;
+const queue = {
+  arrayImplementation,
+  linkedListImplementation,
+  sortQueueIntoAnotherQueueUsingStack,
+  full
+}
+
+export default queue;

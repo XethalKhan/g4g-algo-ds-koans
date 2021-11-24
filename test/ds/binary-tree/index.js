@@ -1,9 +1,18 @@
 import insertTest from './001-insertion.js';
 import removeTest from './002-remove.js';
 
-function test(){
+export const insert = insertTest;
+export const remove = removeTest;
+
+export function full(){
   insertTest();
   removeTest();
 }
 
-export default test;
+const binaryTree = {
+  insert,
+  remove,
+  full
+}
+
+export default binaryTree;

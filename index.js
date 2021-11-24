@@ -2,7 +2,7 @@ import test from './test/index.js';
 
   try{
 
-    test();
+    test.full();
 
   }catch(e){
 

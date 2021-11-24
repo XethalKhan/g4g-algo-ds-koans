@@ -1,11 +1,18 @@
-import sortTest from './sort/index.js';
-import greedyTest from './greedy/index.js';
-import dynamicTest from './dynamic/index.js';
+import sort from './sort/index.js';
+import greedy from './greedy/index.js';
+import dynamic from './dynamic/index.js';
 
-function test(){
-  sortTest();
-  greedyTest();
-  dynamicTest();
+export function full(){
+  sort.full();
+  greedy.full();
+  dynamic.full();
 }
 
-export default test;
+const algorithm = {
+  sort,
+   greedy,
+   dynamic,
+   full
+}
+
+export default algorithm;

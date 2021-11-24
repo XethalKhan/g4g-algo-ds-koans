@@ -6,7 +6,15 @@ import deleteListTest from './005-delete-list.js';
 import lengthIterativeTest from './006-length-iterative.js';
 import lengthRecursiveTest from './007-length-recursive.js';
 
-function test(){
+export const insertNodeAtBeginning = insertNodeAtBeginningTest;
+export const insertNodeAtEnd = insertNodeAtEndTest;
+export const deleteNodeByKeyIterative = deleteNodeByKeyIterativeTest;
+export const deleteNodeByIndex = deleteNodeByIndexTest;
+export const deleteList = deleteListTest;
+export const lengthIterative = lengthIterativeTest;
+export const lengthRecursive = lengthRecursiveTest;
+
+export function full(){
   insertNodeAtBeginningTest();
   insertNodeAtEndTest();
   deleteNodeByKeyIterativeTest();
@@ -16,4 +24,15 @@ function test(){
   lengthRecursiveTest();
 }
 
-export default test;
+const singlyLinkedList = {
+  insertNodeAtBeginning,
+  insertNodeAtEnd,
+  deleteNodeByKeyIterative,
+  deleteNodeByIndex,
+  deleteList,
+  lengthIterative,
+  lengthRecursive,
+  full
+}
+
+export default singlyLinkedList;

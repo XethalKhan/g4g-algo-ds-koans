@@ -1,7 +1,14 @@
 import goldMineProblemTest from './008-gold-mine-problem.js';
 
-function test(){
+export function full(){
   goldMineProblemTest();
 }
 
-export default test;
+export const goldMineProblem = goldMineProblemTest;
+
+const dynamic = {
+  goldMineProblem,
+  full
+}
+
+export default dynamic;

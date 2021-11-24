@@ -6,7 +6,15 @@ import insertionSortIterativeTest from './005-insertion-sort-iterative.js';
 import insertionSortRecursiveTest from './006-insertion-sort-recursive.js';
 import mergeSortTest from './007-merge-sort.js';
 
-function test(){
+export const selectionSort = selectionSortTest;
+export const bubbleSortIterative = bubbleSortIterativeTest;
+export const bubbleSortOptimized = bubbleSortOptimizedTest;
+export const bubbleSortRecursive = bubbleSortRecursiveTest;
+export const insertionSortIterative = insertionSortIterativeTest;
+export const insertionSortRecursive = insertionSortRecursiveTest;
+export const mergeSort = mergeSortTest;
+
+export function full(){
   selectionSortTest();
   bubbleSortIterativeTest();
   bubbleSortOptimizedTest();
@@ -16,4 +24,15 @@ function test(){
   mergeSortTest();
 }
 
-export default test;
+const sort = {
+  selectionSort,
+  bubbleSortIterative,
+  bubbleSortOptimized,
+  bubbleSortRecursive,
+  insertionSortIterative,
+  insertionSortRecursive,
+  mergeSort,
+  full
+}
+
+export default sort;

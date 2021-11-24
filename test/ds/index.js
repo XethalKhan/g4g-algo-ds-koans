@@ -1,15 +1,24 @@
-import arrayTest from './array/index.js';
-import singlyLinkedListTest from './singly-linked-list/index.js';
-import queueTest from './queue/index.js';
-import stackTest from './stack/index.js';
+import array from './array/index.js';
+import singlyLinkedList from './singly-linked-list/index.js';
+import queue from './queue/index.js';
+import stack from './stack/index.js';
 import binaryTree from './binary-tree/index.js';
 
-function test(){
-  arrayTest();
-  singlyLinkedListTest();
-  queueTest();
-  stackTest();
-  binaryTree();
+export function full(){
+  array.full();
+  singlyLinkedList.full();
+  queue.full();
+  stack.full();
+  binaryTree.full();
 }
 
-export default test;
+const ds = {
+  array,
+  singlyLinkedList,
+  queue,
+  stack,
+  binaryTree,
+  full
+}
+
+export default ds;

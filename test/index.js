@@ -1,9 +1,15 @@
-import algorithmTest from './algorithms/index.js';
-import dataStructureTest from './ds/index.js';
+import algorithm from './algorithms/index.js';
+import dataStructure from './ds/index.js';
 
-function test(){
-  algorithmTest();
-  dataStructureTest();
+export function full(){
+  algorithm.full();
+  dataStructure.full();
+}
+
+const test = {
+  algorithm,
+  dataStructure,
+  full
 }
 
 export default test;
