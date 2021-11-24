@@ -34,9 +34,7 @@ when elements are already sorted.
 */
 
 function sort(arr){
-
   return arr;
-
 }
 
 export default sort;
