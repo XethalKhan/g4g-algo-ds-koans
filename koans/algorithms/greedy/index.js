@@ -1,6 +1,10 @@
-import activitySelectionProblem from './001-activity-selection-problem.js';
+import activitySelectionProblemSol from './001-activity-selection-problem.js';
 
-import jobSequencingProblem from './003-job-sequencing-problem.js';
+import jobSequencingProblemSol from './003-job-sequencing-problem.js';
+
+export const activitySelectionProblem = activitySelectionProblemSol;
+
+export const jobSequencingProblem = jobSequencingProblemSol;
 
 const greedy = {
   activitySelectionProblem,

@@ -1,4 +1,6 @@
-import goldMineProblem from './008-gold-mine-problem.js';
+import goldMineProblemSol from './008-gold-mine-problem.js';
+
+export const goldMineProblem = goldMineProblemSol;
 
 const dynamic = {
   goldMineProblem
