@@ -11,7 +11,7 @@ Recursive Solution
 See: https://www.geeksforgeeks.org/find-length-of-a-linked-list-iterative-and-recursive/
 Recursive solution
 
-Time xomplexity: O(n)
+Time complexity: O(n)
 Auxiliary space: O(n)
 */
 

@@ -5,6 +5,7 @@ import deleteIndex from './004-delete-index.js';
 import deleteList from './005-delete-list.js';
 import lengthIterative from './006-length-iterative.js';
 import lengthRecursive from './007-length-recursive.js';
+import searchIterative from './008-search-iterative.js';
 
 import Implementation from './implementation.js';
 
@@ -17,7 +18,8 @@ export const functions = {
   deleteIndex,
   deleteList,
   lengthIterative,
-  lengthRecursive
+  lengthRecursive,
+  searchIterative
 }
 
 export default SinglyLinkedList;

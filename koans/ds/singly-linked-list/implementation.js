@@ -5,6 +5,7 @@ import deleteIndex from './004-delete-index.js';
 import deleteList from './005-delete-list.js';
 import lengthIterative from './006-length-iterative.js';
 import lengthRecursive from './007-length-recursive.js';
+import searchIterative from './008-search-iterative.js';
 
 class SinglyLinkedList{
 
@@ -54,6 +55,7 @@ SinglyLinkedList.prototype.deleteIndex = deleteIndex;
 SinglyLinkedList.prototype.deleteList = deleteList;
 SinglyLinkedList.prototype.lengthIterative = lengthIterative;
 SinglyLinkedList.prototype.lengthRecursive = function(){ return lengthRecursive(this.head); };
+SinglyLinkedList.prototype.searchIterative = searchIterative;
 
 SinglyLinkedList.prototype.toString = function(){
 
