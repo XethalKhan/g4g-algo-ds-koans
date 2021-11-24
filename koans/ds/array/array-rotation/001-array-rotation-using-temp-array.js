@@ -14,7 +14,7 @@ Auxiliary Space: O(d)
 
 function rotate(arr, d = 0){
 
-  return [];
+  return arr;
 
 }
 

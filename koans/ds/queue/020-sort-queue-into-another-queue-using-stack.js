@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import Queue from './../../../lib/classes/queue-linked-list-implementation.js';
-import Stack from './../../../lib/classes/stack-linked-list-implementation.js';
-=======
 import Queue from './linked-list-implementation.js';
 import Stack from './../stack/index.js';
->>>>>>> f469e5d... v0.1.0 - removed /lib directory from project
 
 /*
 Given a Queue consisting of first n natural numbers (in random order).
@@ -43,13 +38,9 @@ See: https://www.geeksforgeeks.org/check-queue-can-sorted-another-queue-using-st
 */
 
 function solve(queue){
-<<<<<<< HEAD
-  return true;
-=======
 
   return false;
 
->>>>>>> f469e5d... v0.1.0 - removed /lib directory from project
 }
 
 
