@@ -14,6 +14,10 @@ export default function exec(algorithms, ds){
         test.algorithms.dynamic.full();
     }
 
+    if(algorithms & 8){
+        test.algorithms.backtracking.full();
+    }
+
     if(ds & 1){
         test.ds.array.full();
     }

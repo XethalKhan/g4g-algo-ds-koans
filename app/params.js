@@ -2,7 +2,7 @@ import test from './test.js';
 
 export default function params(){
 
-    let algorithms = 7;
+    let algorithms = 15;
     let ds = 31;
 
     if(process.argv.length != 2){
@@ -20,6 +20,10 @@ export default function params(){
 
         if(process.argv.indexOf("--dynamic") > -1){
             algorithms += 4;
+        }
+
+        if(process.argv.indexOf("--backtracking") > -1){
+            algorithms += 8;
         }
 
         if(process.argv.indexOf("--array") > -1){
