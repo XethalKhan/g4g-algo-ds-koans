@@ -3,6 +3,8 @@ import Queue from './../queue/index.js';
 import insert from './001-insertion.js';
 import remove from './002-remove.js';
 
+import traversal from './traversal/index.js';
+
 class BinaryTree{
   constructor(){
     this.root = null;
@@ -11,6 +13,24 @@ class BinaryTree{
 
 BinaryTree.prototype.insert = insert;
 BinaryTree.prototype.delete = remove;
+
+BinaryTree.prototype.inorderArr = function(){ 
+  let arr = [];
+  traversal.inorderTraversal(this.root, arr);
+  return arr;
+};
+
+BinaryTree.prototype.preorderArr = function(){ 
+  let arr = [];
+  traversal.preorderTraversal(this.root, arr);
+  return arr;
+};
+
+BinaryTree.prototype.postorderArr = function(){ 
+  let arr = [];
+  traversal.postorderTraversal(this.root, arr);
+  return arr;
+};
 
 BinaryTree.prototype.toString = function(){
 

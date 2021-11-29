@@ -1,6 +1,6 @@
 import test from './../test/index.js';
 
-export default function exec(algorithms, ds){
+export default function exec(algorithms, ds, chef){
 
     if(algorithms & 1){
         test.algorithms.sort.full();
@@ -36,6 +36,10 @@ export default function exec(algorithms, ds){
 
     if(ds & 16){
         test.ds.binaryTree.full();
+    }
+
+    if(chef & 1){
+        test.chef.easy.full();
     }
 
 }
