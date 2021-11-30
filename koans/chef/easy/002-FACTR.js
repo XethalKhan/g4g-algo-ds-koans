@@ -2,22 +2,16 @@
 
 See: https://www.codechef.com/problems/FCTRL
 
-Hint: use BigInt
+Explanation: https://www.geeksforgeeks.org/count-trailing-zeroes-factorial-number/
 */
 
 function solve(n){
 
     let zeroes = 0;
-    let result = BigInt(1);
 
-    for(let i = BigInt(1); i <= n; i++){
+    for(let i = 5; Math.floor(n / i) >= 1; i*=5){
         
-        result = result * i;
-
-        while(result % 10n == 0n){
-            zeroes += 1;
-            result = result / 10n;
-        }
+        zeroes += Math.floor(n / i);
 
     }
 

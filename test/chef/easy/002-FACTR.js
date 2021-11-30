@@ -23,12 +23,7 @@ function test(){
 
   assert.deepStrictEqual(solve(23456), 5861, MSG);
 
-  /*
-  This test case is too heavy.
-  Apparently it should be resolved in 8 seconds!
-
   assert.deepStrictEqual(solve(8735373), 2183837, MSG);
-  */
 
 }
 
