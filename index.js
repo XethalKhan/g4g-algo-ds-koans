@@ -4,6 +4,8 @@ try{
 
   app();
 
+  console.log("All checks passed! Congratulations :)")
+
 }catch(e){
 
   console.log(e.message);

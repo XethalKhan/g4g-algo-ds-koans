@@ -42,4 +42,8 @@ export default function exec(algorithms, ds, chef){
         test.chef.easy.full();
     }
 
+    if(chef & 2){
+        test.chef.medium.full();
+    }
+
 }

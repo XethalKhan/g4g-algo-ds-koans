@@ -7,6 +7,8 @@ import lengthIterativeTest from './006-length-iterative.js';
 import lengthRecursiveTest from './007-length-recursive.js';
 import searchIterativeTest from './008-search-iterative.js';
 import searchRecursiveTest from './009-search-recursive.js';
+import getNodeTest from './010-get-node.js';
+import getNodeEndTest from './011-get-node-from-end.js';
 
 export const insertNodeAtBeginning = insertNodeAtBeginningTest;
 export const insertNodeAtEnd = insertNodeAtEndTest;
@@ -17,6 +19,8 @@ export const lengthIterative = lengthIterativeTest;
 export const lengthRecursive = lengthRecursiveTest;
 export const searchIterative = searchIterativeTest;
 export const searchRecursive = searchRecursiveTest;
+export const getNode = getNodeTest;
+export const getNodeEnd = getNodeEndTest;
 
 export function full(){
   insertNodeAtBeginningTest();
@@ -28,6 +32,8 @@ export function full(){
   lengthRecursiveTest();
   searchIterativeTest();
   searchRecursiveTest();
+  getNodeTest();
+  getNodeEndTest();
 }
 
 const singlyLinkedList = {
@@ -40,6 +46,8 @@ const singlyLinkedList = {
   lengthRecursive,
   searchIterative,
   searchRecursive,
+  getNode,
+  getNodeEnd,
   full
 }
 

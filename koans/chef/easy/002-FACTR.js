@@ -2,7 +2,7 @@
 
 See: https://www.codechef.com/problems/FCTRL
 
-Explanation: https://www.geeksforgeeks.org/count-trailing-zeroes-factorial-number/
+See also (explanation): https://www.geeksforgeeks.org/count-trailing-zeroes-factorial-number/
 */
 
 function solve(n){

@@ -4,7 +4,7 @@ export default function params(){
 
     let algorithms = 15;
     let ds = 31;
-    let chef = 1;
+    let chef = 3;
 
     if(process.argv.length != 2){
 
@@ -50,6 +50,10 @@ export default function params(){
 
         if(process.argv.indexOf("--chef-easy") > -1){
             chef += 1;
+        }
+
+        if(process.argv.indexOf("--chef-medium") > -1){
+            chef += 2;
         }
 
     }

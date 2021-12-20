@@ -7,6 +7,8 @@ import lengthIterative from './006-length-iterative.js';
 import lengthRecursive from './007-length-recursive.js';
 import searchIterative from './008-search-iterative.js';
 import searchRecursive from './009-search-recursive.js';
+import getNode from './010-get-node.js';
+import getNodeEnd from './011-get-node-from-end.js';
 
 class SinglyLinkedList{
 
@@ -58,6 +60,8 @@ SinglyLinkedList.prototype.lengthIterative = lengthIterative;
 SinglyLinkedList.prototype.lengthRecursive = function(){ return lengthRecursive(this.head); };
 SinglyLinkedList.prototype.searchIterative = searchIterative;
 SinglyLinkedList.prototype.searchRecursive = function(item){ return searchRecursive(item, this.head); };
+SinglyLinkedList.prototype.getNode = getNode;
+SinglyLinkedList.prototype.getNodeEnd = getNodeEnd;
 
 SinglyLinkedList.prototype.toString = function(){
 
