@@ -4,13 +4,13 @@ export default function params(){
 
     let algorithms = 15;
     let ds = 31;
-    let chef = 3;
+    let chef = 7;
 
     if(process.argv.length != 2){
 
         algorithms = 0;
         ds = 0;
-        chef = 1;
+        chef = 0;
 
         if(process.argv.indexOf("--sort") > -1){
             algorithms += 1;
@@ -54,6 +54,10 @@ export default function params(){
 
         if(process.argv.indexOf("--chef-medium") > -1){
             chef += 2;
+        }
+
+        if(process.argv.indexOf("--chef-hard") > -1){
+            chef += 4;
         }
 
     }

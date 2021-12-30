@@ -46,4 +46,8 @@ export default function exec(algorithms, ds, chef){
         test.chef.medium.full();
     }
 
+    if(chef & 4){
+        test.chef.hard.full();
+    }
+
 }
